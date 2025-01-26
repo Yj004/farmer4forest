@@ -1,0 +1,1364 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1211.0901                               -->
+<workbook original-version='18.1' source-build='2024.3.2 (20243.24.1211.0901)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneFriendlyName />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='farmers_data (postgres)' inline='true' name='federated.0w735m81pzecko17dulcj11isocf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='postgres.1kjn9fx02x7d1p148dlmz0wx9dss'>
+            <connection authentication='username-password' class='postgres' dbname='postgres' one-time-sql='' port='5432' server='localhost' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <relation connection='postgres.1kjn9fx02x7d1p148dlmz0wx9dss' name='farmers_data' table='[public].[farmers_data]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>sr_no</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[sr_no]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>sr_no</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uid</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uid]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>uid</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>program_year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[program_year]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>program_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>farmer_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[farmer_name]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>farmer_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plantation_type_dense_fruit</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[plantation_type_dense_fruit]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>plantation_type_dense_fruit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_land_area_acre</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[total_land_area_acre]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>total_land_area_acre</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>area_f4f_acre</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[area_f4f_acre]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>area_f4f_acre</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>block</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[block]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>block</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>water_available</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[water_available]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>water_available</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>electricity_available</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[electricity_available]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>electricity_available</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kml_uploaded</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[kml_uploaded]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>kml_uploaded</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contract_uploaded</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[contract_uploaded]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>contract_uploaded</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>land_record_uploaded</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[land_record_uploaded]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>land_record_uploaded</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cc_training_uploaded</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[cc_training_uploaded]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>cc_training_uploaded</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>soil_sample_collected</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[soil_sample_collected]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>soil_sample_collected</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cc_training_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[cc_training_date]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>cc_training_date</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drone_ortho_taken</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[drone_ortho_taken]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>drone_ortho_taken</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>farmer_payment_collected</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[farmer_payment_collected]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>farmer_payment_collected</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>farmer_payment_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[farmer_payment_date]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>farmer_payment_date</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[amount]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>amount</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>12</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mode_collection_cash_upi_banktransfer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mode_collection_cash_upi_banktransfer]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>mode_collection_cash_upi_banktransfer</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contract_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[contract_date]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>contract_date</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>baseline_survey</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[baseline_survey]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>baseline_survey</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>plantation_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[plantation_date]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>plantation_date</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trees_planted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[trees_planted]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>trees_planted</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mango_native</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[mango_native]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>mango_native</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mango_grafted_kesar</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[mango_grafted_kesar]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>mango_grafted_kesar</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lemon_sai_sharbati</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[lemon_sai_sharbati]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>lemon_sai_sharbati</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sitaphal_native</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[sitaphal_native]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>sitaphal_native</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sitaphal_golden</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[sitaphal_golden]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>sitaphal_golden</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sitaphal_balanagar</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[sitaphal_balanagar]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>sitaphal_balanagar</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>awala</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[awala]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>awala</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>awala_grafted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[awala_grafted]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>awala_grafted</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>peru</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[peru]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>peru</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>peru_sardar</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[peru_sardar]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>peru_sardar</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chincha</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[chincha]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>chincha</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chincha_grafted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[chincha_grafted]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>chincha_grafted</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jamun</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[jamun]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>jamun</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>jamun_bhardoli</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[jamun_bhardoli]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>jamun_bhardoli</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chikku</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[chikku]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>chikku</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>orange</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[orange]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>orange</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mosambi</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[mosambi]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>mosambi</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dalimb</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dalimb]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>dalimb</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ramphal</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ramphal]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>ramphal</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>drumstick_koimb</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[drumstick_koimb]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>drumstick_koimb</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bamboo</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[bamboo]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>bamboo</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>karwand</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[karwand]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>karwand</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arjun</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arjun]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>arjun</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>katesawar</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[katesawar]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>katesawar</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>karanj</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[karanj]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>karanj</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kaduneem</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kaduneem]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>kaduneem</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kanchan</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kanchan]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>kanchan</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>kadamb</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[kadamb]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>kadamb</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bhendi</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[bhendi]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>bhendi</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shirish</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[shirish]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>shirish</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ain</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[ain]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>ain</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pimpal</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[pimpal]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>pimpal</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vad</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[vad]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>vad</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tamhan</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[tamhan]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>tamhan</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waval</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[waval]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>waval</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>palas</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[palas]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>palas</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>babhul</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[babhul]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>babhul</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bakul</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[bakul]</local-name>
+            <parent-name>[farmers_data]</parent-name>
+            <remote-alias>bakul</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <object-id>[farmers_data_67069487487046A096F4B8124846154A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='farmers_data' datatype='table' name='[__tableau_internal_object_id__].[farmers_data_67069487487046A096F4B8124846154A]' role='measure' type='quantitative' />
+      <column caption='Ain' datatype='integer' name='[ain]' role='measure' type='quantitative' />
+      <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+      <column caption='Area F4F Acre' datatype='real' name='[area_f4f_acre]' role='measure' type='quantitative' />
+      <column caption='Arjun' datatype='integer' name='[arjun]' role='measure' type='quantitative' />
+      <column caption='Awala' datatype='integer' name='[awala]' role='measure' type='quantitative' />
+      <column caption='Awala Grafted' datatype='integer' name='[awala_grafted]' role='measure' type='quantitative' />
+      <column caption='Babhul' datatype='integer' name='[babhul]' role='measure' type='quantitative' />
+      <column caption='Bakul' datatype='integer' name='[bakul]' role='measure' type='quantitative' />
+      <column caption='Bamboo' datatype='integer' name='[bamboo]' role='measure' type='quantitative' />
+      <column caption='Baseline Survey' datatype='boolean' name='[baseline_survey]' role='dimension' type='nominal' />
+      <column caption='Bhendi' datatype='integer' name='[bhendi]' role='measure' type='quantitative' />
+      <column caption='Block' datatype='string' name='[block]' role='dimension' type='nominal' />
+      <column caption='Cc Training Date' datatype='date' name='[cc_training_date]' role='dimension' type='ordinal' />
+      <column caption='Cc Training Uploaded' datatype='boolean' name='[cc_training_uploaded]' role='dimension' type='nominal' />
+      <column caption='Chikku' datatype='integer' name='[chikku]' role='measure' type='quantitative' />
+      <column caption='Chincha' datatype='integer' name='[chincha]' role='measure' type='quantitative' />
+      <column caption='Chincha Grafted' datatype='integer' name='[chincha_grafted]' role='measure' type='quantitative' />
+      <column caption='Contract Date' datatype='date' name='[contract_date]' role='dimension' type='ordinal' />
+      <column caption='Contract Uploaded' datatype='boolean' name='[contract_uploaded]' role='dimension' type='nominal' />
+      <column caption='Dalimb' datatype='integer' name='[dalimb]' role='measure' type='quantitative' />
+      <column caption='District' datatype='string' name='[district]' role='dimension' type='nominal' />
+      <column caption='Drone Ortho Taken' datatype='boolean' name='[drone_ortho_taken]' role='dimension' type='nominal' />
+      <column caption='Drumstick Koimb' datatype='integer' name='[drumstick_koimb]' role='measure' type='quantitative' />
+      <column caption='Electricity Available' datatype='boolean' name='[electricity_available]' role='dimension' type='nominal' />
+      <column caption='Farmer Name' datatype='string' name='[farmer_name]' role='dimension' type='nominal' />
+      <column caption='Farmer Payment Collected' datatype='boolean' name='[farmer_payment_collected]' role='dimension' type='nominal' />
+      <column caption='Farmer Payment Date' datatype='date' name='[farmer_payment_date]' role='dimension' type='ordinal' />
+      <column caption='Jamun' datatype='integer' name='[jamun]' role='measure' type='quantitative' />
+      <column caption='Jamun Bhardoli' datatype='integer' name='[jamun_bhardoli]' role='measure' type='quantitative' />
+      <column caption='Kadamb' datatype='integer' name='[kadamb]' role='measure' type='quantitative' />
+      <column caption='Kaduneem' datatype='integer' name='[kaduneem]' role='measure' type='quantitative' />
+      <column caption='Kanchan' datatype='integer' name='[kanchan]' role='measure' type='quantitative' />
+      <column caption='Karanj' datatype='integer' name='[karanj]' role='measure' type='quantitative' />
+      <column caption='Karwand' datatype='integer' name='[karwand]' role='measure' type='quantitative' />
+      <column caption='Katesawar' datatype='integer' name='[katesawar]' role='measure' type='quantitative' />
+      <column caption='Kml Uploaded' datatype='boolean' name='[kml_uploaded]' role='dimension' type='nominal' />
+      <column caption='Land Record Uploaded' datatype='boolean' name='[land_record_uploaded]' role='dimension' type='nominal' />
+      <column caption='Lemon Sai Sharbati' datatype='integer' name='[lemon_sai_sharbati]' role='measure' type='quantitative' />
+      <column caption='Mango Grafted Kesar' datatype='integer' name='[mango_grafted_kesar]' role='measure' type='quantitative' />
+      <column caption='Mango Native' datatype='integer' name='[mango_native]' role='measure' type='quantitative' />
+      <column caption='Mode Collection Cash Upi Banktransfer' datatype='string' name='[mode_collection_cash_upi_banktransfer]' role='dimension' type='nominal' />
+      <column caption='Mosambi' datatype='integer' name='[mosambi]' role='measure' type='quantitative' />
+      <column caption='Orange' datatype='integer' name='[orange]' role='measure' type='quantitative' />
+      <column caption='Palas' datatype='integer' name='[palas]' role='measure' type='quantitative' />
+      <column caption='Peru' datatype='integer' name='[peru]' role='measure' type='quantitative' />
+      <column caption='Peru Sardar' datatype='integer' name='[peru_sardar]' role='measure' type='quantitative' />
+      <column caption='Pimpal' datatype='integer' name='[pimpal]' role='measure' type='quantitative' />
+      <column caption='Plantation Date' datatype='date' name='[plantation_date]' role='dimension' type='ordinal' />
+      <column caption='Plantation Type Dense Fruit' datatype='string' name='[plantation_type_dense_fruit]' role='dimension' type='nominal' />
+      <column caption='Program Year' datatype='integer' name='[program_year]' role='dimension' type='quantitative' />
+      <column caption='Ramphal' datatype='integer' name='[ramphal]' role='measure' type='quantitative' />
+      <column caption='Shirish' datatype='integer' name='[shirish]' role='measure' type='quantitative' />
+      <column caption='Sitaphal Balanagar' datatype='integer' name='[sitaphal_balanagar]' role='measure' type='quantitative' />
+      <column caption='Sitaphal Golden' datatype='integer' name='[sitaphal_golden]' role='measure' type='quantitative' />
+      <column caption='Sitaphal Native' datatype='integer' name='[sitaphal_native]' role='measure' type='quantitative' />
+      <column caption='Soil Sample Collected' datatype='boolean' name='[soil_sample_collected]' role='dimension' type='nominal' />
+      <column caption='Sr No' datatype='integer' name='[sr_no]' role='measure' type='quantitative' />
+      <column caption='Tamhan' datatype='integer' name='[tamhan]' role='measure' type='quantitative' />
+      <column caption='Total Land Area Acre' datatype='real' name='[total_land_area_acre]' role='measure' type='quantitative' />
+      <column caption='Trees Planted' datatype='integer' name='[trees_planted]' role='measure' type='quantitative' />
+      <column caption='Uid' datatype='string' name='[uid]' role='dimension' type='nominal' />
+      <column caption='Vad' datatype='integer' name='[vad]' role='measure' type='quantitative' />
+      <column caption='Water Available' datatype='boolean' name='[water_available]' role='dimension' type='nominal' />
+      <column caption='Waval' datatype='integer' name='[waval]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='farmers_data' id='farmers_data_67069487487046A096F4B8124846154A'>
+            <properties context=''>
+              <relation connection='postgres.1kjn9fx02x7d1p148dlmz0wx9dss' name='farmers_data' table='[public].[farmers_data]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Collection Mode'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='farmers_data (postgres)' name='federated.0w735m81pzecko17dulcj11isocf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w735m81pzecko17dulcj11isocf'>
+            <column caption='Amount' datatype='real' name='[amount]' role='measure' type='quantitative' />
+            <column caption='Mode Collection Cash Upi Banktransfer' datatype='string' name='[mode_collection_cash_upi_banktransfer]' role='dimension' type='nominal' />
+            <column-instance column='[mode_collection_cash_upi_banktransfer]' derivation='None' name='[none:mode_collection_cash_upi_banktransfer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[amount]' derivation='Sum' name='[sum:amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0w735m81pzecko17dulcj11isocf].[sum:amount:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0w735m81pzecko17dulcj11isocf].[sum:amount:qk]' />
+              <text column='[federated.0w735m81pzecko17dulcj11isocf].[sum:amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0w735m81pzecko17dulcj11isocf].[none:mode_collection_cash_upi_banktransfer:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{8A5DF5FE-0D91-4717-9DEE-9378E9CA3CE8}' />
+    </worksheet>
+    <worksheet name='Contract Sign'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='farmers_data (postgres)' name='federated.0w735m81pzecko17dulcj11isocf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w735m81pzecko17dulcj11isocf'>
+            <column-instance column='[program_year]' derivation='Count' name='[cnt:program_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Contract Date' datatype='date' name='[contract_date]' role='dimension' type='ordinal' />
+            <column-instance column='[contract_date]' derivation='Month' name='[mn:contract_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Program Year' datatype='integer' name='[program_year]' role='dimension' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0w735m81pzecko17dulcj11isocf].[cnt:program_year:qk]</rows>
+        <cols>[federated.0w735m81pzecko17dulcj11isocf].[mn:contract_date:ok]</cols>
+      </table>
+      <simple-id uuid='{A2D4AA1F-9FDA-4827-9304-44A6F56B288C}' />
+    </worksheet>
+    <worksheet name='FAF Acre Acc. Contract'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='farmers_data (postgres)' name='federated.0w735m81pzecko17dulcj11isocf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w735m81pzecko17dulcj11isocf'>
+            <column caption='Area F4F Acre' datatype='real' name='[area_f4f_acre]' role='measure' type='quantitative' />
+            <column-instance column='[area_f4f_acre]' derivation='Count' name='[cnt:area_f4f_acre:qk]' pivot='key' type='quantitative' />
+            <column caption='Contract Date' datatype='date' name='[contract_date]' role='dimension' type='ordinal' />
+            <column-instance column='[contract_date]' derivation='Month' name='[mn:contract_date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0w735m81pzecko17dulcj11isocf].[cnt:area_f4f_acre:qk]</rows>
+        <cols>[federated.0w735m81pzecko17dulcj11isocf].[mn:contract_date:ok]</cols>
+      </table>
+      <simple-id uuid='{3E68E7A5-1F00-4767-8436-87CE152A5D47}' />
+    </worksheet>
+    <worksheet name='Most acer involved acc. Block '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='farmers_data (postgres)' name='federated.0w735m81pzecko17dulcj11isocf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w735m81pzecko17dulcj11isocf'>
+            <column caption='District' datatype='string' name='[district]' role='dimension' type='nominal' />
+            <column-instance column='[district]' derivation='None' name='[none:district:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_land_area_acre]' derivation='Sum' name='[sum:total_land_area_acre:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Land Area Acre' datatype='real' name='[total_land_area_acre]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0w735m81pzecko17dulcj11isocf].[none:district:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0w735m81pzecko17dulcj11isocf].[sum:total_land_area_acre:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0w735m81pzecko17dulcj11isocf].[sum:total_land_area_acre:qk]</rows>
+        <cols>[federated.0w735m81pzecko17dulcj11isocf].[none:district:nk]</cols>
+      </table>
+      <simple-id uuid='{4DFE4DD1-5B61-4ADF-96BC-84CE15FCA6CC}' />
+    </worksheet>
+    <worksheet name='No. of tree planted'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='farmers_data (postgres)' name='federated.0w735m81pzecko17dulcj11isocf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0w735m81pzecko17dulcj11isocf'>
+            <column caption='District' datatype='string' name='[district]' role='dimension' type='nominal' />
+            <column-instance column='[district]' derivation='None' name='[none:district:nk]' pivot='key' type='nominal' />
+            <column-instance column='[trees_planted]' derivation='Sum' name='[sum:trees_planted:qk]' pivot='key' type='quantitative' />
+            <column caption='Trees Planted' datatype='integer' name='[trees_planted]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0w735m81pzecko17dulcj11isocf].[none:district:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0w735m81pzecko17dulcj11isocf].[sum:trees_planted:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0w735m81pzecko17dulcj11isocf].[sum:trees_planted:qk]</rows>
+        <cols>[federated.0w735m81pzecko17dulcj11isocf].[none:district:nk]</cols>
+      </table>
+      <simple-id uuid='{775349E1-E66A-40D1-8D53-ED41AED22A0C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='600' maxwidth='800' minheight='600' minwidth='800' preset-index='3' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone friendly-name='No. of tree planted' h='55250' id='3' name='No. of tree planted' w='63000' x='34200' y='2750' />
+        <zone h='20667' id='5' name='Collection Mode' w='31625' x='1625' y='1833' />
+        <zone h='40500' id='6' name='Contract Sign' w='40900' x='3000' y='58625' />
+        <zone h='38500' id='7' name='Most acer involved acc. Block ' w='53600' x='45800' y='59750' />
+        <zone h='34000' id='8' name='FAF Acre Acc. Contract' w='31125' x='2125' y='24333' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='19' param='vert' type-v2='layout-flow' w='98000' x='1000' y='1333'>
+                <zone fixed-size='124' h='20667' id='5' is-fixed='true' name='Collection Mode' w='31625' x='1625' y='1833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' friendly-name='No. of tree planted' h='55250' id='3' is-fixed='true' name='No. of tree planted' w='63000' x='34200' y='2750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='204' h='34000' id='8' is-fixed='true' name='FAF Acre Acc. Contract' w='31125' x='2125' y='24333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='243' h='40500' id='6' is-fixed='true' name='Contract Sign' w='40900' x='3000' y='58625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='38500' id='7' is-fixed='true' name='Most acer involved acc. Block ' w='53600' x='45800' y='59750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4DF89B8B-818F-46BA-9033-75826156380C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='No. of tree planted'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B21EEE2-32D9-4AC8-ADB4-30A7587B698A}' />
+    </window>
+    <window class='worksheet' name='Collection Mode'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0w735m81pzecko17dulcj11isocf].[sum:amount:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C25AAD01-257D-4CAC-87DD-55757B3A96D4}' />
+    </window>
+    <window class='worksheet' name='Contract Sign'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{203E0058-8DB7-4D91-BFE4-9B84607369EA}' />
+    </window>
+    <window class='worksheet' name='Most acer involved acc. Block '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9BACA577-CA60-4082-973B-BA5DB70B879F}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Collection Mode'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Contract Sign'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='FAF Acre Acc. Contract'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Most acer involved acc. Block '>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No. of tree planted'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <device-preview visible='true' />
+      <simple-id uuid='{D94D2911-4D0F-4C41-AC1E-8E6E8136C21E}' />
+    </window>
+    <window class='worksheet' name='FAF Acre Acc. Contract'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3C9B3DEE-2D4A-4AA4-BA0B-0877CD993465}' />
+    </window>
+  </windows>
+</workbook>
