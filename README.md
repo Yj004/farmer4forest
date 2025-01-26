@@ -41,8 +41,7 @@ Ensure the following are installed:
 
   CREATE TABLE farmer_details (  
     id SERIAL PRIMARY KEY,  
-    farmer_name VARCHAR(100),  
-    field_manager VARCHAR(100),  
+    farmer_name VARCHAR(100),   
     contact_number VARCHAR(15),  
     address TEXT,  
     -- Add other fields as required  
@@ -59,9 +58,7 @@ Ensure the following are installed:
 farmer-detail-form/  
 ├── app.py              # Flask backend logic  
 ├── templates/          # HTML templates for the form  
-├── static/             # Static assets (CSS, JS)  
 ├── schema.sql          # SQL schema for database setup  
-├── requirements.txt    # Python dependencies  
 └── README.md           # Project documentation  
 
 <img src="images/form.png" width="800" />
