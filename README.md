@@ -14,10 +14,14 @@ A Flask-based application for collecting, verifying, and storing farmer details,
    - Shows a 🔔 **flash message** if errors are detected, prompting corrections.  
 
 ✅ **Database Integration**:  
-   - Stores verified data in a **PostgreSQL** database.  
+   - Stores verified data in a **PostgreSQL** database.
+   -  <img src="images/database.png" width="800" />
+
+     
 
 ✅ **Tableau Integration**:  
-   - Connects PostgreSQL to Tableau to deliver actionable dashboards and key insights.  
+   - Connects PostgreSQL to Tableau to deliver actionable dashboards and key insights.
+   - <img src="images/dashboard.png" width="800" />
 
 ---
 
@@ -60,9 +64,8 @@ farmer-detail-form/
 ├── requirements.txt    # Python dependencies  
 └── README.md           # Project documentation  
 
+<img src="images/form.png" width="800" />
 
 
-
----
 
 
