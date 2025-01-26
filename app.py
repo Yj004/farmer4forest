@@ -60,11 +60,6 @@ def form():
             except ValueError:
                 errors.append("One or more dates are invalid.")
 
-            # Flagging logic: No electricity and no water
-            if not farmer_data["water_available"] and not farmer_data["electricity_available"]:
-                flash("Farmer has no electricity and no water. Data flagged for review.", "error")
-                return redirect(url_for('index'))
-
             # Flash errors if any
             if errors:
                 for error in errors:
