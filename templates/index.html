@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A form for submitting farmer data including UID, plantation type, and other details.">
+    <title>Farmer Data Input</title>
+    <!-- <link rel="stylesheet" href="templates/style.css"> -->
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <h1>Enter Farmer Data</h1>
+    <!-- Display flash messages -->
+    
+    <form action="/" method="POST">
+        <label for="uid">UID:</label>
+        <input type="text" id="uid" name="uid" value="F128" required><br><br>
+        
+
+        <label for="program_year">Program Year:</label>
+        <input type="number" id="program_year" name="program_year" value="2025" required><br><br>
+
+        <label for="farmer_name">Farmer Name:</label>
+        <input type="text" id="farmer_name" name="farmer_name" value="Ramesh Kumar" required><br><br>
+
+        <label for="plantation_type_dense_fruit">Plantation Type (Dense Fruit):</label>
+        <input type="text" id="plantation_type_dense_fruit" name="plantation_type_dense_fruit" value="Mango" required><br><br>
+
+        <label for="total_land_area_acre">Total Land Area (acres):</label>
+        <input 
+            type="number" 
+            step="1" 
+            id="total_land_area_acre" 
+            name="total_land_area_acre" 
+            value="5.5" 
+            min="1" 
+            required 
+            oninput="validateTotalLandArea(this)">
+        <span id="error-message" style="color: red; display: none;">Land Value must be greater than 0.</span>
+        <br><br>
+
+        <script>
+        function validateTotalLandArea(input) {
+            const errorMessage = document.getElementById('error-message');
+            if (input.value <= 0) {
+                errorMessage.style.display = 'inline'; // Show error message
+                input.setCustomValidity("Total Land Area must be greater than 0.");
+            } else {
+                errorMessage.style.display = 'none'; // Hide error message
+                input.setCustomValidity(""); // Clear custom validity
+            }
+        }
+        </script>
+
+        <label for="area_f4f_acre">Area F4F (acres):</label>
+        <input type="number" step="0.1" id="area_f4f_acre" name="area_f4f_acre" value="2.0" required><br><br>
+
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" value="Pune" required><br><br>
+
+        <label for="block">Block:</label>
+        <input type="text" id="block" name="block" value="Haveli" required><br><br>
+
+        <label for="water_available">Water Available:</label>
+        <input type="checkbox" id="water_available" name="water_available" checked ><br><br>
+
+        <label for="electricity_available">Electricity Available:</label>
+        <input type="checkbox" id="electricity_available" name="electricity_available" checked ><br><br>
+
+        <label for="kml_uploaded">KML Uploaded:</label>
+        <input type="checkbox" id="kml_uploaded" name="kml_uploaded" checked><br><br>
+
+        <label for="contract_uploaded">Contract Uploaded:</label>
+        <input type="checkbox" id="contract_uploaded" name="contract_uploaded" checked><br><br>
+
+        <label for="land_record_uploaded">Land Record Uploaded:</label>
+        <input type="checkbox" id="land_record_uploaded" name="land_record_uploaded" checked><br><br>
+
+        <label for="cc_training_uploaded">CC Training Uploaded:</label>
+        <input type="checkbox" id="cc_training_uploaded" name="cc_training_uploaded"><br><br>
+
+        <label for="soil_sample_collected">Soil Sample Collected:</label>
+        <input type="checkbox" id="soil_sample_collected" name="soil_sample_collected" checked><br><br>
+
+        <label for="cc_training_date">CC Training Date:</label>
+        <input type="date" id="cc_training_date" name="cc_training_date"><br><br>
+
+        <label for="drone_ortho_taken">Drone Ortho Taken:</label>
+        <input type="checkbox" id="drone_ortho_taken" name="drone_ortho_taken" checked><br><br>
+
+        <label for="farmer_payment_collected">Farmer Payment Collected:</label>
+        <input type="checkbox" id="farmer_payment_collected" name="farmer_payment_collected" checked><br><br>
+
+        <label for="farmer_payment_date">Farmer Payment Date:</label>
+        <input type="date" id="farmer_payment_date" name="farmer_payment_date" value="2025-01-15" required><br><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" step="0.1" id="amount" name="amount" value="1500.0" required><br><br>
+
+        <label for="mode_collection_cash_upi_banktransfer">Mode of Collection:</label>
+        <select id="mode_collection_cash_upi_banktransfer" name="mode_collection_cash_upi_banktransfer" required>
+            <option value="UPI" selected>UPI</option>
+            <option value="Cash">Cash</option>
+            <option value="Bank Transfer">Bank Transfer</option>
+        </select><br><br>
+
+        <label for="contract_date">Contract Date:</label>
+        <input type="date" id="contract_date" name="contract_date" value="2025-01-10" required><br><br>
+
+        <label for="baseline_survey">Baseline Survey Completed:</label>
+        <input type="checkbox" id="baseline_survey" name="baseline_survey" checked><br><br>
+
+        <label for="plantation_date">Plantation Date:</label>
+        <input type="date" id="plantation_date" name="plantation_date" value="2025-01-20" required><br><br>
+
+        <label for="trees_planted">Number of Trees Planted:</label>
+        <input 
+            type="number" 
+            id="trees_planted" 
+            name="trees_planted" 
+            value="400" 
+            required 
+            oninput="validateInput()" 
+        />
+        <span id="error_message" style="color: red; display: none;">Value must be greater than 350.</span>
+        <br><br>
+
+        <script>
+            function validateInput() {
+                const inputField = document.getElementById('trees_planted');
+                const errorMessage = document.getElementById('error_message');
+                const minValue = 351;
+
+                if (parseInt(inputField.value) < minValue) {
+                    errorMessage.style.display = 'inline'; // Show error message
+                } else {
+                    errorMessage.style.display = 'none'; // Hide error message
+                }
+            }
+        </script>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul>
+                    {% for category, message in messages %}
+                        <li style="color: {{ 'red' if category == 'error' else 'green' }};">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
